@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Masudul Kabir — Shopify Developer</title>
+  <meta name="description" content="Professional Shopify Developer with 50+ e-commerce projects. Expert in Liquid, JavaScript, custom theme development, and Shopify ecosystem." />
+  <meta property="og:title" content="Md. Masudul Kabir — Shopify Developer" />
+  <meta property="og:description" content="Professional Shopify Developer with 50+ e-commerce projects." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- ==================== NAV ==================== -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-bracket">&lt;</span>Kabir<span class="nav__logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Hire Me</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__glow hero__glow--1"></div>
+    <div class="hero__glow hero__glow--2"></div>
+    <div class="hero__container">
+      <div class="hero__avatar reveal">
+        <div class="hero__avatar-ring"></div>
+        <img src="assets/images/kabir.png" alt="Md. Masudul Kabir" class="hero__avatar-img" />
+        <div class="hero__avatar-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+      </div>
+      <div class="hero__badge reveal">
+        <span class="hero__badge-dot"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero__title reveal">
+        Hi, I'm <span class="hero__name">Masudul Kabir</span>
+      </h1>
+      <div class="hero__subtitle reveal">
+        <span class="hero__static">I build </span>
+        <span class="hero__typed" id="typedText"></span>
+        <span class="hero__cursor">|</span>
+      </div>
+      <p class="hero__desc reveal">
+        Professional Shopify Developer with <strong>50+ e-commerce projects</strong> delivered.
+        I craft high-converting, brand-focused online stores — from premium themes to fully custom builds.
+      </p>
+      <div class="hero__cta reveal">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div class="hero__stat">
+          <span class="hero__stat-num">50+</span>
+          <span class="hero__stat-label">Projects Done</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">3+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">100%</span>
+          <span class="hero__stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__visual reveal">
+          <div class="about__photo-wrap">
+            <div class="about__photo-glow"></div>
+            <div class="about__photo-frame">
+              <img src="assets/images/kabir.png" alt="Md. Masudul Kabir — Shopify Developer" class="about__photo" />
+            </div>
+            <!-- Floating badges -->
+            <div class="about__float about__float--tl">
+              <span class="about__float-icon">💼</span>
+              <div>
+                <strong>50+</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+            <div class="about__float about__float--br">
+              <span class="about__float-icon">⭐</span>
+              <div>
+                <strong>Top Rated</strong>
+                <span>Developer</span>
+              </div>
+            </div>
+            <div class="about__float about__float--bl">
+              <div class="about__status-dot"></div>
+              <span>Available now</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__content reveal">
+          <div class="section__label">About Me</div>
+          <h2 class="section__title">Turning Ideas Into <span class="highlight">Shopify Success</span></h2>
+          <p class="about__text">
+            I'm a dedicated Shopify developer who has spent years mastering the full Shopify ecosystem. From architecting complex metafield structures to crafting pixel-perfect custom themes, I bring both technical depth and a designer's eye to every project.
+          </p>
+          <p class="about__text">
+            My journey started as a freelancer, serving local and overseas clients. That foundation of direct client work sharpened my ability to understand business goals and translate them into conversion-focused stores. Later, working at an agency refined my skills on large-scale, deadline-driven projects.
+          </p>
+          <div class="about__highlights">
+            <div class="about__highlight">
+              <div class="about__highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Custom theme development from scratch</span>
+            </div>
+            <div class="about__highlight">
+              <div class="about__highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Metafields & metaobjects specialist</span>
+            </div>
+            <div class="about__highlight">
+              <div class="about__highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Custom product bundle & catalog features</span>
+            </div>
+            <div class="about__highlight">
+              <div class="about__highlight-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <span>Agency & freelance experience combined</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">What I Work With</div>
+        <h2 class="section__title">Skills & <span class="highlight">Tech Stack</span></h2>
+        <p class="section__subtitle">A comprehensive toolkit built through 50+ real-world e-commerce projects</p>
+      </div>
+
+      <div class="skill-groups">
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--lang">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="skill-group__title">Languages</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Liquid</span>
+            <span class="skill-badge">JavaScript (ES6+)</span>
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Ajax &amp; Fetch API</span>
+            <span class="skill-badge">JSON</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--shopify">
+              <svg viewBox="0 0 109.5 124.5" fill="currentColor"><path d="M74.7 14.8s-.3.1-.7.2c-.4-1.2-1-2.7-1.9-4.1-2.8-4.3-6.9-6.6-11.8-6.6-.3 0-.7 0-1 .1-.1-.2-.3-.3-.4-.5-2.1-2.3-4.9-3.4-8.2-3.3-6.4.2-12.7 4.8-17.9 13-3.6 5.7-6.4 12.9-7.1 18.5l-12.2 3.8c-3.6 1.1-3.7 1.2-4.2 4.7L0 109.2l74.8 13.1V14.8zm-15.5 4.6c-3.8 1.2-7.9 2.4-11.9 3.7.3-1.1.6-2.2 1-3.3 1.3-3.9 3.8-6.4 6.6-7.2 1.7 1.7 3.2 4.3 4.3 6.8zm-8.6-9.3c.4 0 .8 0 1.2.1-3.4 1.6-7 5.3-8.5 13.1l-10.1 3.1c1.4-7.7 7.1-15.9 17.4-16.3zm-.3 52.9s-3.4-1.8-7.5-1.8c-6 0-6.3 3.8-6.3 4.7 0 5.2 13.5 7.1 13.5 19.2 0 9.5-6 15.6-14.1 15.6-9.7 0-14.6-6-14.6-6l2.6-8.6s5.1 4.4 9.4 4.4c2.8 0 4-2.2 4-3.8 0-6.7-11.1-7-11.1-18.1 0-9.3 6.7-18.3 20.2-18.3 5.2 0 7.8 1.5 7.8 1.5l-3.9 11.2zm7.6-44.2c-.1 0-.1 0 0 0-1-5.3-3.9-10.6-8.2-13.3 3.5.8 7.7 5.7 8.2 13.3z"/></svg>
+            </div>
+            <h3 class="skill-group__title">Shopify Platform</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Custom Theme Development</span>
+            <span class="skill-badge">Online Store 2.0</span>
+            <span class="skill-badge">Sections &amp; Blocks</span>
+            <span class="skill-badge">Dynamic &amp; Static Sections</span>
+            <span class="skill-badge">settings_schema.json</span>
+            <span class="skill-badge">Shopify CLI &amp; Theme Kit</span>
+            <span class="skill-badge">Metafields &amp; Metaobjects</span>
+            <span class="skill-badge">Storefront API</span>
+            <span class="skill-badge">Admin API</span>
+            <span class="skill-badge">Shopify Markets</span>
+            <span class="skill-badge skill-badge--plus">Shopify Plus</span>
+            <span class="skill-badge">Shopify Scripts</span>
+            <span class="skill-badge">Shopify Functions</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--features">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="skill-group__title">Advanced Features</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Custom Product Bundles</span>
+            <span class="skill-badge">Product Catalog Management</span>
+            <span class="skill-badge">Ajax Cart Drawer</span>
+            <span class="skill-badge">Mega Menu</span>
+            <span class="skill-badge">Custom Product Pages</span>
+            <span class="skill-badge">Custom Collection Pages</span>
+            <span class="skill-badge">Landing Pages</span>
+            <span class="skill-badge">Product Filtering &amp; Sorting</span>
+            <span class="skill-badge">Custom Search</span>
+            <span class="skill-badge">Wishlist</span>
+            <span class="skill-badge">Recently Viewed</span>
+            <span class="skill-badge">Cross-sell &amp; Upsell</span>
+            <span class="skill-badge">Sticky Add to Cart</span>
+            <span class="skill-badge">Pop-ups &amp; Modals</span>
+            <span class="skill-badge">Countdown Timers</span>
+            <span class="skill-badge">Size Chart &amp; Fit Guide</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--design">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <h3 class="skill-group__title">Design &amp; Conversion</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Figma to Shopify (Pixel-perfect)</span>
+            <span class="skill-badge">PSD to Shopify</span>
+            <span class="skill-badge">Responsive &amp; Mobile-first</span>
+            <span class="skill-badge">Cross-browser Compatibility</span>
+            <span class="skill-badge">UI/UX Best Practices</span>
+            <span class="skill-badge">CRO-focused Layout</span>
+            <span class="skill-badge">Brand-focused Store Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--integrations">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </div>
+            <h3 class="skill-group__title">Third-party Integrations</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Judge.me</span>
+            <span class="skill-badge">Yotpo</span>
+            <span class="skill-badge">Loyalty &amp; Rewards Apps</span>
+            <span class="skill-badge">Live Chat</span>
+            <span class="skill-badge">Social Proof Apps</span>
+            <span class="skill-badge">Currency Converter</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--perf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="skill-group__title">Performance</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Theme Speed Optimization</span>
+            <span class="skill-badge">Image Optimization &amp; Lazy Loading</span>
+            <span class="skill-badge">Code Minification</span>
+            <span class="skill-badge">Core Web Vitals</span>
+            <span class="skill-badge">Render-blocking Resource Handling</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <div class="skill-group__header">
+            <div class="skill-group__icon skill-group__icon--tools">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="skill-group__title">Dev Tools</h3>
+          </div>
+          <div class="skill-badges">
+            <span class="skill-badge">Git &amp; GitHub</span>
+            <span class="skill-badge">Shopify CLI</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Chrome DevTools</span>
+            <span class="skill-badge">Postman</span>
+            <span class="skill-badge">Figma</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES ==================== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">What I Offer</div>
+        <h2 class="section__title">My <span class="highlight">Services</span></h2>
+        <p class="section__subtitle">End-to-end Shopify development services tailored to your business goals</p>
+      </div>
+      <div class="services__grid">
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="service-card__title">Custom Theme Development</h3>
+          <p class="service-card__desc">Built from scratch with OS 2.0 architecture — fully configurable sections, blocks, and theme settings tailored to your brand.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3 class="service-card__title">Premium Theme Customization</h3>
+          <p class="service-card__desc">Transform any premium or free Shopify theme into a unique, brand-focused experience that stands out from competitors.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3 class="service-card__title">Page Builder Development</h3>
+          <p class="service-card__desc">Expert-level page building with PageFly, GemPage, and Replo for high-converting landing and product pages — fast.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3 class="service-card__title">Metafields &amp; Metaobjects</h3>
+          <p class="service-card__desc">Structured, scalable content management using Shopify's metafield and metaobject infrastructure for complex data needs.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h3 class="service-card__title">Custom Product Bundles</h3>
+          <p class="service-card__desc">Mix-and-match bundles, fixed packs, volume discounts — built custom without third-party app limitations.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="service-card__title">Figma / PSD to Shopify</h3>
+          <p class="service-card__desc">Pixel-perfect conversion of your design files into fully functional, responsive, and optimized Shopify themes.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <h3 class="service-card__title">Ajax Cart &amp; Checkout Customization</h3>
+          <p class="service-card__desc">Custom cart drawers, upsell widgets, cart notes, and Shopify Functions for checkout UI extensions on Plus.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="service-card__title">Speed &amp; Performance Optimization</h3>
+          <p class="service-card__desc">Core Web Vitals improvement, lazy loading, code cleanup, and render-blocking resource fixes for higher PageSpeed scores.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="service-card__title">Shopify Plus Features &amp; Scripts</h3>
+          <p class="service-card__desc">Shopify Scripts, B2B features, checkout extensions, and multi-store management for enterprise-level merchants.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h3 class="service-card__title">Third-party App &amp; API Integration</h3>
+          <p class="service-card__desc">Seamless integration of review apps, loyalty programs, live chat, currency converters, and custom API connections.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="service-card__title">Store Setup &amp; Configuration</h3>
+          <p class="service-card__desc">Full store setup — products, collections, navigation, shipping, taxes, payment gateways, and all policies.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3 class="service-card__title">Ongoing Support &amp; Maintenance</h3>
+          <p class="service-card__desc">Continued support for bug fixes, feature updates, Shopify platform changes, and performance monitoring.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">My Journey</div>
+        <h2 class="section__title">Work <span class="highlight">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Shopify Developer</h3>
+                <span class="timeline__company">Akta Service</span>
+              </div>
+              <span class="timeline__period">January, 2026 — Present</span>
+            </div>
+            <p class="timeline__desc">
+              Joined a professional Shopify agency, delivering high-scale e-commerce solutions for multiple clients simultaneously. Worked on complex, deadline-driven projects with structured workflows and cross-functional teams.
+            </p>
+            <ul class="timeline__list">
+              <li>Developed and maintained 20+ client Shopify stores</li>
+              <li>Built custom metafield & metaobject data architectures</li>
+              <li>Delivered fully custom product bundle features</li>
+              <li>Collaborated on large product catalog implementations</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Liquid</span><span>JavaScript</span><span>Custom Themes</span><span>Metaobjects</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Freelance Shopify Developer</h3>
+                <span class="timeline__company">Self-employed</span>
+              </div>
+              <span class="timeline__period">2024 — 2025</span>
+            </div>
+            <p class="timeline__desc">
+              Built a freelance practice serving local and international clients. Gained diverse experience across industries, store sizes, and business requirements — developing strong communication and project management skills alongside technical ones.
+            </p>
+            <ul class="timeline__list">
+              <li>Served 30+ local and overseas clients</li>
+              <li>End-to-end Shopify store setup and customization</li>
+              <li>Theme customization and custom feature development</li>
+              <li>Page builder implementations (PageFly, GemPage, Replo)</li>
+            </ul>
+            <div class="timeline__tags">
+              <span>Freelance</span><span>PageFly</span><span>GemPage</span><span>Replo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">My Work</div>
+        <h2 class="section__title">Featured <span class="highlight">Projects</span></h2>
+        <p class="section__subtitle">Real stores, real results — hover to explore each project</p>
+      </div>
+
+      <!-- ── Row 1: 2 wide cards ── -->
+      <div class="proj-row proj-row--2 reveal">
+
+        <article class="proj-card">
+          <div class="proj-card__screen">
+            <div class="proj-card__browser-bar">
+              <span></span><span></span><span></span>
+              <div class="proj-card__url">valyriandesigns.com/products/reflection-pool-fountain</div>
+            </div>
+            <div class="proj-card__img-wrap">
+              <img src="assets/images/projects/valyrian-design.png"
+                   alt="Valyrian Design — Metafield variant media gallery"
+                   class="proj-card__img" loading="lazy" />
+            </div>
+          </div>
+          <div class="proj-card__info">
+            <div class="proj-card__tags">
+              <span class="proj-tag proj-tag--meta">Metafields</span>
+              <span class="proj-tag proj-tag--meta">Metaobjects</span>
+              <span class="proj-tag">Custom Product Page</span>
+              <span class="proj-tag">Liquid</span>
+            </div>
+            <h3 class="proj-card__title">Valyrian Design</h3>
+            <p class="proj-card__desc">Built a variant-aware media gallery system using Metafields and Metaobjects. When a customer selects a specific variant combination, the entire media gallery dynamically swaps to images tied to that exact combo — no page reload, pure Liquid + JavaScript.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Variant-based media gallery via Metaobjects</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dynamic gallery swap without page reload</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Complex metafield data architecture</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-card__screen">
+            <div class="proj-card__browser-bar">
+              <span></span><span></span><span></span>
+              <div class="proj-card__url">holisticdepot.co/products/oyster</div>
+            </div>
+            <div class="proj-card__img-wrap">
+              <img src="assets/images/projects/holistic-depot.png"
+                   alt="Holistic Depot — Custom product page with bundle"
+                   class="proj-card__img" loading="lazy" />
+            </div>
+          </div>
+          <div class="proj-card__info">
+            <div class="proj-card__tags">
+              <span class="proj-tag proj-tag--bundle">Product Bundle</span>
+              <span class="proj-tag">Custom Product Page</span>
+              <span class="proj-tag">JavaScript</span>
+              <span class="proj-tag">Liquid</span>
+            </div>
+            <h3 class="proj-card__title">Holistic Depot</h3>
+            <p class="proj-card__desc">Fully custom-built product page with an integrated bundle selection feature. Customers can choose bundle tiers (Buy 1 / Buy 2+1 / Buy 3+2) with live price updates, dynamic savings display, and seamless AJAX cart integration — all built without a third-party app.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Custom bundle tiers with live price calculation</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> No third-party bundle app — 100% custom code</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> AJAX cart with upsell cross-sell</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ── Row 2: 3 tall cards ── -->
+      <div class="proj-row proj-row--3 reveal">
+
+        <article class="proj-card proj-card--tall">
+          <div class="proj-card__screen">
+            <div class="proj-card__browser-bar">
+              <span></span><span></span><span></span>
+              <div class="proj-card__url">cocoa-crumb.myshopify.com</div>
+            </div>
+            <div class="proj-card__img-wrap">
+              <img src="assets/images/projects/cocoa-and-crumb.png"
+                   alt="Cocoa & Crumb — Custom Shopify theme"
+                   class="proj-card__img" loading="lazy" />
+            </div>
+          </div>
+          <div class="proj-card__info">
+            <div class="proj-card__tags">
+              <span class="proj-tag proj-tag--theme">Custom Theme</span>
+              <span class="proj-tag">OS 2.0</span>
+              <span class="proj-tag">From Scratch</span>
+            </div>
+            <h3 class="proj-card__title">Cocoa &amp; Crumb</h3>
+            <p class="proj-card__desc">Fully custom Shopify theme built from scratch using OS 2.0. Every section, block, and setting designed to match the brand's warm, feminine aesthetic.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Built from zero — no starter theme</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Full OS 2.0 sections &amp; blocks</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card proj-card--tall">
+          <div class="proj-card__screen">
+            <div class="proj-card__browser-bar">
+              <span></span><span></span><span></span>
+              <div class="proj-card__url">trynewaura.com/products/seborrheic-dermatitis-cream</div>
+            </div>
+            <div class="proj-card__img-wrap">
+              <img src="assets/images/projects/trynewaura.png"
+                   alt="Try New Aura — High-converting landing page"
+                   class="proj-card__img" loading="lazy" />
+            </div>
+          </div>
+          <div class="proj-card__info">
+            <div class="proj-card__tags">
+              <span class="proj-tag proj-tag--page">GemPage</span>
+              <span class="proj-tag">Landing Page</span>
+              <span class="proj-tag">CRO</span>
+            </div>
+            <h3 class="proj-card__title">Try New Aura</h3>
+            <p class="proj-card__desc">High-converting product landing page built with GemPage. Social proof sections, video testimonials, trust badges, and a CRO-optimised layout drove strong conversion rates.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> CRO-focused section structure</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Social proof &amp; video testimonials</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card proj-card--tall proj-card--mobile">
+          <div class="proj-card__screen proj-card__screen--mobile">
+            <div class="proj-card__phone-frame">
+              <div class="proj-card__phone-notch"></div>
+              <div class="proj-card__img-wrap">
+                <img src="assets/images/projects/custom-cart-drawer.png"
+                     alt="Custom Cart Drawer with upsell"
+                     class="proj-card__img" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="proj-card__info">
+            <div class="proj-card__tags">
+              <span class="proj-tag proj-tag--bundle">Cart Drawer</span>
+              <span class="proj-tag">Upsell</span>
+              <span class="proj-tag">AJAX</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+            <h3 class="proj-card__title">Custom Cart Drawer</h3>
+            <p class="proj-card__desc">Fully custom AJAX cart drawer with dynamic upsell product recommendations. Displays free gift items, quantity selectors, and a sticky checkout — all built from scratch with vanilla JavaScript.</p>
+            <div class="proj-card__highlights">
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Upsell product block with AJAX add-to-cart</div>
+              <div class="proj-highlight"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Free gift items auto-added by cart value</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ── CTA ── -->
+      <div class="proj-cta reveal">
+        <p>These are 5 highlights from <strong>50+ projects</strong>. Want to see more or discuss your store?</p>
+        <a href="#contact" class="btn btn--primary">Start a Project</a>
+        <a href="https://www.upwork.com/freelancers/~01bbeabdf34668be05" target="_blank" class="btn btn--ghost">View Upwork Profile</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="section__label">Get In Touch</div>
+          <h2 class="section__title">Let's Build Something <span class="highlight">Great</span></h2>
+          <p class="contact__text">
+            Whether you need a new Shopify store, a custom feature, theme customization, or technical consulting — I'm ready to help. Let's talk about your project.
+          </p>
+          <div class="contact__items">
+            <a href="mailto:masudul.k13b@gmail.com" class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact__item-label">Email</span>
+                <span class="contact__item-value">masudul.k13b@gmail.com</span>
+              </div>
+            </a>
+            <!-- WhatsApp — replace YOUR_NUMBER with your number incl. country code, no + or spaces e.g. 8801XXXXXXXXX -->
+            <a href="https://wa.me/8801750965382?text=Hi%20Kabir%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" class="contact__item contact__item--whatsapp">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div>
+                <span class="contact__item-label">WhatsApp</span>
+                <span class="contact__item-value">Chat directly with me</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/mk-swaron/" target="_blank" class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <div>
+                <span class="contact__item-label">LinkedIn</span>
+                <span class="contact__item-value">Md. Masudul Kabir</span>
+              </div>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~01bbeabdf34668be05" target="_blank" class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.545-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg>
+              </div>
+              <div>
+                <span class="contact__item-label">Upwork</span>
+                <span class="contact__item-value">Masudul Kabir</span>
+              </div>
+            </a>
+          </div>
+          <button class="btn btn--ghost contact__book-btn" data-cal-namespace="popup" data-cal-link="kabir-masood" data-cal-config='{"layout":"month_view","theme":"dark"}'>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Book a Free Discovery Call
+          </button>
+        </div>
+
+        <div class="contact__form-wrap reveal">
+          <form class="contact__form" id="contactForm"
+                action="https://formspree.io/f/xyklqgan"
+                method="POST">
+            <div class="form__group">
+              <label class="form__label" for="name">Your Name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">Email Address</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="service">What do you need?</label>
+              <select class="form__input form__select" id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="new-store">New Shopify Store</option>
+                <option value="custom-theme">Custom Theme Development</option>
+                <option value="customization">Theme Customization</option>
+                <option value="custom-feature">Custom Feature / App</option>
+                <option value="page-builder">Landing Page (Page Builder)</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Project Details</label>
+              <textarea class="form__input form__textarea" id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span>Send Message</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form__success" id="formSuccess">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Message sent! I'll get back to you within 24 hours.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BOOKING (commented out — uncomment to enable inline calendar) ====================
+  <section class="section booking" id="booking">
+    <div class="container">
+      <div class="section__header reveal">
+        <div class="section__label">Schedule a Meeting</div>
+        <h2 class="section__title">Book a <span class="highlight">Free Discovery Call</span></h2>
+        <p class="section__subtitle">Pick any open slot — I'll confirm instantly. No email back-and-forth needed.</p>
+      </div>
+      <div class="booking__features reveal">
+        <div class="booking__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>30-min free call</span>
+        </div>
+        <div class="booking__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 10l4.553-2.069A1 1 0 0 1 21 8.82v6.36a1 1 0 0 1-1.447.888L15 14"/><rect x="1" y="8" width="14" height="8" rx="1"/></svg>
+          <span>Google Meet link auto-generated</span>
+        </div>
+        <div class="booking__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12 19.79 19.79 0 0 1 1.97 3.36 2 2 0 0 1 3.94 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Confirmation email to both parties</span>
+        </div>
+        <div class="booking__feature">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Zero double-booking — slots close once taken</span>
+        </div>
+      </div>
+      <div class="booking__embed reveal" id="cal-inline"></div>
+    </div>
+  </section>
+  ==================== END BOOKING ==================== -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#home" class="nav__logo">
+            <span class="nav__logo-bracket">&lt;</span>Kabir<span class="nav__logo-bracket">/&gt;</span>
+          </a>
+          <p>Professional Shopify Developer crafting high-converting e-commerce experiences.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 Md. Masudul Kabir. Built with HTML, CSS & JavaScript.</span>
+        <span>Open to opportunities worldwide</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+
+  <!-- ==================== CAL.COM EMBED ==================== -->
+  <script type="text/javascript">
+    (function (C, A, L) {
+      let p = function (a, ar) { a.q.push(ar); };
+      let d = C.document;
+      C.Cal = C.Cal || function () {
+        let cal = C.Cal; let ar = arguments;
+        if (!cal.loaded) {
+          cal.ns = {}; cal.q = cal.q || [];
+          d.head.appendChild(d.createElement("script")).src = A;
+          cal.loaded = true;
+        }
+        if (ar[0] === L) {
+          const api = function () { p(api, arguments); };
+          const namespace = ar[1];
+          api.q = api.q || [];
+          if (typeof namespace === "string") {
+            cal.ns[namespace] = cal.ns[namespace] || api;
+            p(cal.ns[namespace], ar);
+            p(cal, ["-attacher", namespace, ar]);
+          } else { p(cal, ar); }
+          return;
+        }
+        p(cal, ar);
+      };
+      C.Cal.ns = C.Cal.ns || {};
+    })(window, "https://app.cal.com/embed/embed.js", "init");
+
+    /* ── Popup: fires when "Book a Free Discovery Call" button is clicked ── */
+    Cal("init", "popup", { origin: "https://cal.com" });
+    Cal.ns.popup("ui", {
+      theme: "dark",
+      styles: { branding: { brandColor: "#00d084" } },
+      hideEventTypeDetails: false,
+      layout: "month_view"
+    });
+
+    /* ── Inline embed — commented out (uncomment when booking section is re-enabled)
+    Cal("init", "inline", { origin: "https://cal.com" });
+    Cal.ns.inline("inline", {
+      elementOrSelector: "#cal-inline",
+      calLink: "kabir-masood",
+      config: { layout: "month_view" }
+    });
+    Cal.ns.inline("ui", {
+      theme: "dark",
+      styles: { branding: { brandColor: "#00d084" } },
+      hideEventTypeDetails: false,
+      layout: "month_view"
+    });
+    ── end inline embed ── */
+  </script>
+</body>
+</html>
