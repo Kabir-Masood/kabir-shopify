@@ -2,54 +2,6 @@
    KABIR.ME — Portfolio JavaScript
    ============================================================ */
 
-/* ---- CUSTOM CURSOR ---- */
-(function () {
-  const cursor = document.getElementById('cursor');
-  const trail = document.getElementById('cursor-trail');
-  if (!cursor || !trail) return;
-
-  // On touch devices, hide cursor elements entirely
-  if (window.matchMedia('(pointer: coarse)').matches) {
-    cursor.style.display = 'none';
-    trail.style.display = 'none';
-    document.body.style.cursor = 'auto';
-    return;
-  }
-
-  let trailX = 0, trailY = 0;
-  let cursorX = 0, cursorY = 0;
-
-  document.addEventListener('mousemove', e => {
-    cursorX = e.clientX;
-    cursorY = e.clientY;
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top  = cursorY + 'px';
-  });
-
-  // Trail lags behind with RAF for smoothness
-  function animateTrail() {
-    trailX += (cursorX - trailX) * 0.14;
-    trailY += (cursorY - trailY) * 0.14;
-    trail.style.left = trailX + 'px';
-    trail.style.top  = trailY + 'px';
-    requestAnimationFrame(animateTrail);
-  }
-  animateTrail();
-
-  // Hover expansion on interactive elements
-  const interactives = 'a, button, [role="button"], .skill-badge, .service-card, .project-card, .nav__link, label';
-  document.addEventListener('mouseover', e => {
-    if (e.target.closest(interactives)) document.body.classList.add('cursor-hover');
-  });
-  document.addEventListener('mouseout', e => {
-    if (e.target.closest(interactives)) document.body.classList.remove('cursor-hover');
-  });
-
-  // Hide when leaving window
-  document.addEventListener('mouseleave', () => { cursor.style.opacity = '0'; trail.style.opacity = '0'; });
-  document.addEventListener('mouseenter', () => { cursor.style.opacity = '1'; trail.style.opacity = '1'; });
-})();
-
 /* ---- NAV: scroll effect + mobile toggle ---- */
 (function () {
   const nav = document.getElementById('nav');
@@ -121,10 +73,10 @@
 
   const phrases = [
     'Shopify stores that convert.',
-    'custom Liquid templates.',
-    'product bundle features.',
-    'brand-focused themes.',
-    'e-commerce experiences.',
+    'fast, accessible storefronts.',
+    'pixel-perfect Figma themes.',
+    'data-driven CRO wins.',
+    'custom Liquid features.',
     'Shopify solutions that scale.',
   ];
 

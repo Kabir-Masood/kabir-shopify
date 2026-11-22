@@ -2,37 +2,6 @@
    KABIR.ME — Portfolio Stylesheet
    ============================================================ */
 
-/* ---- CUSTOM CURSOR ---- */
-body { cursor: none; }
-#cursor {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: #00d084;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: width 0.25s, height 0.25s, opacity 0.25s;
-  mix-blend-mode: screen;
-}
-#cursor-trail {
-  position: fixed;
-  width: 34px;
-  height: 34px;
-  border: 1.5px solid rgba(0, 208, 132, 0.45);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99998;
-  transform: translate(-50%, -50%);
-  transition: left 0.1s ease, top 0.1s ease, width 0.25s, height 0.25s;
-}
-body.cursor-hover #cursor { width: 16px; height: 16px; opacity: 0.7; }
-body.cursor-hover #cursor-trail { width: 48px; height: 48px; border-color: rgba(0, 208, 132, 0.25); }
-/* Restore cursor on inputs/textareas */
-input, textarea, select { cursor: text; }
-a, button { cursor: none; }
-
 /* ---- TOKENS ---- */
 :root {
   --green: #00d084;
@@ -694,6 +663,18 @@ input, textarea, select { font-family: inherit; }
 .skill-group__icon--integrations { background: rgba(240, 219, 79, 0.12); color: #f0db4f; }
 .skill-group__icon--perf    { background: rgba(251, 113, 133, 0.12); color: #fb7185; }
 .skill-group__icon--tools   { background: rgba(167, 139, 250, 0.12); color: #a78bfa; }
+.skill-group__icon--cro     { background: rgba(56, 189, 248, 0.12); color: #38bdf8; }
+.skill-badge--more {
+  background: var(--green-glow) !important;
+  border-color: rgba(0, 208, 132, 0.3) !important;
+  color: var(--green) !important;
+}
+.skill-group__note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
 .skill-group__title {
   font-size: 0.8rem;
   font-weight: 700;
@@ -1075,6 +1056,8 @@ input, textarea, select { font-family: inherit; }
 .proj-tag--bundle { background: var(--green-glow); border-color: rgba(0,208,132,0.2); color: var(--green); }
 .proj-tag--theme { background: rgba(150,191,72,0.08); border-color: rgba(150,191,72,0.2); color: #96bf48; }
 .proj-tag--page  { background: rgba(214,93,177,0.08); border-color: rgba(214,93,177,0.2); color: #d65db1; }
+.proj-tag--cro   { background: rgba(56,189,248,0.08); border-color: rgba(56,189,248,0.2); color: #38bdf8; }
+.proj-tag--perf  { background: rgba(251,113,133,0.08); border-color: rgba(251,113,133,0.2); color: #fb7185; }
 
 .proj-card__title {
   font-size: 1.1rem;
@@ -1108,6 +1091,35 @@ input, textarea, select { font-family: inherit; }
   color: var(--green);
   flex-shrink: 0;
 }
+
+/* ── Visit-store button ── */
+.proj-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 9px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green);
+  background: var(--green-glow);
+  border: 1px solid rgba(0,208,132,0.25);
+  border-radius: 100px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.proj-card__link:hover {
+  background: var(--green);
+  border-color: var(--green);
+  color: #04121a;
+}
+.proj-card__link svg {
+  width: 15px; height: 15px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.proj-card__link:hover svg { transform: translate(2px, -2px); }
 
 /* ── CTA row ── */
 .proj-cta {
